@@ -1,19 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Name of chosen challenge</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redactr</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
-    <h2>make some magic here!!</h2>
 
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
-    <script src="index.mjs" type="module"></script>
-    <!-- // ============= EEND DO NOT EDIT ============== // -->
+<body>
+
+  <div class="container">
+
+    <aside class="sidebar">
+
+      <section class="top-nav">
+        <h1 class="logo">Redactr</h1>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <section class="sidebar-nav">
+        <ul class="list-items">
+          <li class="item">
+            <img src="./assets/home.png" alt="icon" />
+            <span class="item-text">Home</span>
+          </li>
+
+          <li class="item">
+            <img src="./assets/circle.png" alt="icon" />
+            <span class="item-text">Circles</span>
+          </li>
+
+          <li class="item">
+            <img src="./assets/leaderboard.png" alt="icon" />
+            <span class="item-text">Leaderboard</span>
+          </li>
+
+          <li class="item">
+            <img src="./assets/reward.png" alt="icon" />
+            <span class="item-text">Rewards</span>
+          </li>
+        </ul>
+      </section>
+
+    </aside>
+
+    <main class="main-content">
+
+      <div class="search-sect">
+        <input type="text" placeholder="Search Redactr" />
+        <img class="icon-search" src="./assets/search.png" alt="icon" />
+      </div>
+
+      <div class="create-post">
+        <span class="image-border">
+          <img src="./assets/avatar.png" alt="avatar" />
+        </span>
+        <input class="post" type="text" />
+      </div>
+      <div class="redactr-sect">
+        <input type="checkbox" />
+        <span>Redactr Text</span>
+      </div>
+      <button class="submit">Post</button>
+  </div>
+  </main>
+  </div>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
+  <script src="index.mjs" type="module"></script>
+  <!-- // ============= EEND DO NOT EDIT ============== // -->
 </body>
+
 </html>

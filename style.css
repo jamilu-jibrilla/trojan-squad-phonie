@@ -1,0 +1,200 @@
+/*-------- Default styles-----------  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Space+Grotesk:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/*most repeated styles are stored as a variable for easy referencing*/
+:root {
+  --white: #FFFFFF;
+  --light-green: #0A7878;
+  --dark-green : #053434;
+  --grey: #F1F1F1;
+  --light-grey: #FAFAFA;
+  --dark-grey: #8E8E8E;
+  --text-color: #3A3838;
+  --nav-height: 13vh;
+}
+
+/* Container that holds the side navigation and main content */
+.container {
+  max-width: 1440px;
+  height: 100vh;
+  display: flex;
+}
+
+/* -----------Sidebar styling------------- */
+.sidebar {
+  width: 25vw;
+  height: 100%;
+  background: var(--light-grey);
+}
+
+.logo {
+  color: var(--dark-green);
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.hamburger {
+  cursor: pointer;
+}
+
+.hamburger .line {
+  height: 2px;
+  width: 25px;
+  margin: 4px 0px;
+  background-color: var(--dark-grey);
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: var(--nav-height);
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.list-items .item {
+  display: flex;
+  align-items: center;
+  width: 256px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 32px;
+  margin-bottom: 15px;
+  background: var(--grey);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.list-items .item:first-child {
+  color: var(--white);
+  background: var(--light-green);
+}
+
+.list-items .item img {
+  margin: 0px 22px 0px 20px;
+}
+
+
+/*--------------main content styles--------------- */
+
+.main-content {
+  height: 100%;
+}
+
+
+/*  search bar  */
+.search-sect input[type="text"] {
+  width: 300px;
+  height: 45px;
+  margin-left: 35px;
+  border-radius: 56px;
+  padding-left: 2rem;
+  font-weight: 400px;
+  color:  var(--dark-grey);
+  outline: none;
+  border: .5px solid var(--light-green);
+  position: relative;
+}
+
+.icon-search {
+  position: relative;
+  left: -40px;
+}
+.search-sect input[type="text"]:hover {
+  outline: none;
+}
+
+
+::placeholder {
+  color:  var(--dark-grey);
+  font-size: 15px;
+}
+
+.search-sect {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 0.2px solid #eeeded;
+  height: var(--nav-height); 
+}
+
+/*-------- create posts input styles -------------*/
+.create-post {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px 0px 0px 26px;
+}
+
+.image-border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  border: 0.4px solid var(--light-green);
+  margin-right: 15px;
+}
+
+.post {
+  display: block;
+  width: 624px;
+  background: var(--light-grey);
+  border: 0.4px solid var(--light-green);
+  border-radius: 24px;
+  outline: none;
+  padding:10px 1rem 135px;
+}
+.post:hover {
+  outline: none;
+}
+.redactr-sect {
+  margin: 1rem 0px 0px 7rem;
+  
+}
+.redactr-sect input[type="checkbox"]{
+  border: 1px solid var(--light-green);
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+
+.submit {
+  width: 115px;
+  height: 48px;
+  background: var(--dark-grey);
+  border-radius: 56px;
+  border: none;
+  margin: 1.3rem 0px 0px 7rem;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--white);
+}
+
+/* redact text modal input styles, after styling the modal set it display to be none by default */
+
+/* user posts card styles */
+
+/* User stats modal styles, after styling the modal set it display to be none by default*/
+
+
+
+/* ------------Mobile Responsiveness--------------- */
+
+@media screen and (max-width:750px) {
+  /* implement mobile version of the app */
+}
